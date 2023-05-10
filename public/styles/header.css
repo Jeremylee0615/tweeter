@@ -2,7 +2,7 @@
     height: 400px;
     width: 100%;
     
-    background-color: #ec9e29;
+    background-color: #eca829;
     background-image: url("../images/fablic-light.png");
     margin-top: 120px;
     
@@ -15,7 +15,7 @@
 
 .profile .name h2 {
     color: white;
-    font-weight: 300;
+    font-weight: 600;
 }
 
 .profile .name h2 span {

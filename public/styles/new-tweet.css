@@ -1,52 +1,49 @@
 .new-tweet {
-    width: 60%;
-    margin: 0.5em;
+  width: 60%;
+  margin: 0.5em;
 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
     
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .submitTweets {
-    width: 100%;
-    margin-top: 5px;
+  margin-top: 5px;
     
-    /*border: 1px solid red; -- to check what is working. */
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
-    font-family: "Bungee";    
-    font-size: 30;
-
+  font-family: "Bungee";    
+  font-size: 20px;
 }
 
 button {
-    font-family: "Bungee";    
-    font-size: 30;
+  font-family: "Bungee";    
+  font-size: 20px;
     
-    border: none;
-    color: white;
-    background-color: #4056A1;
+  border: none;
+  color: white;
+  background-color: #4056A1;
 }
 
 textarea {
-    width: 100%;
-    height: 35px;
-    margin-top: 5px;
+  width: 100%;
+  height: 35px;
+  margin-top: 5px;
     
-    overflow: hidden;
-    resize: none;
-    display: block;
-    
-    outline: none;
-    border: none;
-    border-bottom: solid black;
-    background-color: #f4f1ec;
+  outline: none;
+  border: none;
+  border-bottom: solid black;
+  background-color: #f4f1ec;
 
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 20px;
-    font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+
+  overflow: hidden;
+  resize: none;
+  display: block;
 }

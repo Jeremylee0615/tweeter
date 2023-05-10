@@ -26,7 +26,7 @@ body {
   margin-top: 120px;
 }
 
-/*main {
+/*body main {
   color: #545149;
   background-color: #f4f1ec;
 
@@ -41,20 +41,21 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
- .container {
+.container {
   width: 90%;
   margin-right: auto;
   margin-left: auto;
 
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
-.tweet-container {
-  width: 60%;
-  margin-right: auto;
-  margin-left: auto;
+article {
+  border: solid;
   margin-bottom: 0.5em;
+  
+  align-items: column;
 }
+
