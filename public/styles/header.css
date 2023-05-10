@@ -1,14 +1,23 @@
-header {
+.profile {
     height: 400px;
     width: 100%;
     
     background-color: #ec9e29;
     background-image: url("../images/fablic-light.png");
-
+    margin-top: 120px;
     
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 120px; 
+    
+}
+
+.profile .name h2 {
+    color: white;
+    font-weight: 300;
+}
+
+.profile .name h2 span {
+    font-weight: 600;
 }
