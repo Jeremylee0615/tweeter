@@ -43,7 +43,7 @@
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   </head>
 
-  
+
   <body>
     <!-- Top nav bar (fixed) -->
     <nav class ="nav-Bar">
@@ -53,7 +53,7 @@
       <footer>
         <button class = "writeNew">
           <span><strong>Write</strong> a new Tweet!</span>
-          <i id = "arrowDoubleDown" class="fa-solid fa-angles-down"></i>
+          <i id = "arrow" class="fa-solid fa-angles-down"></i>
         </button>
       </footer>
     </nav>
@@ -66,12 +66,17 @@
         <h2><span>Jeremy Lee</span></h2>
       </div>
   </header>
-  <!-- error -->
-  <div class ="error"></div>
-  <!-- Page-specific (main) content here -->
+  
+
+    <!-- Page-specific (main) content here -->
   <main class="container">
     <section class="new-tweet">
-      <h2>Compose Tweet</h2>
+    
+      <!-- error messages -->
+      <div class ="error-message">  
+      </div>
+    
+      <!-- Submitting Tweets-->
         <form id="tweetForm" action="/tweets" method="POST">
         <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
         <div class="submitTweets">

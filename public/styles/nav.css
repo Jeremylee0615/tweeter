@@ -15,22 +15,33 @@
 }
 
 .heading {
-    color: #FFFFFF;
-    font-family: "Bungee";
-    font-size: 35px;
-    margin: 1.5em;
+  margin: 1.5em;
+  
+  color: #FFFFFF;
+  font-family: "Bungee";
+  font-size: 35px;
+}
+
+.nav-Bar footer .writeNew {
+  margin: 1.0em;
+  
+  border: none;
+  outline: none;
+  color: #ffffff;
+  background-color: #4056A1;
+  font-family: "Source Sans Pro";
+  font-size: 25px;
+  font-weight: 300;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
 }
 
-.writeNew {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 1.5em;
-    margin: 0;
-
-}
-
-#arrowDoubleDown {
-    color: tomato;
+#arrow {
+  margin-top: 0.5em; 
+  
+  color: tomato;
+  font-size: 1.5em;
 }

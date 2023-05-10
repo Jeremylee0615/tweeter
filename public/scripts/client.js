@@ -46,9 +46,9 @@ $(document).ready(function() {
 		event.preventDefault();
 		const tweetContent = $("#tweet-text").val();
 		if (tweetContent.length === 0) {
-      $(".error").text("Opps, you have not entered anyting.")
+      $(".error-message").text("Opps, you have not entered anyting.")
     } else if (tweetContent.length > 140) {
-      $(".error").text("Sorry, You have exceeded the words limit that you can tweet.")
+      $(".error-message").text("Sorry, You have exceeded the words limit that you can tweet.")
     } else {
       const serialized = $(this).serialize();
 		  $.post("http://localhost:8080/tweets", serialized, (reponse) => {
