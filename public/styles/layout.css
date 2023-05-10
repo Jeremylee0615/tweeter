@@ -26,9 +26,15 @@ body {
   align-items: center;
 }
 
-body main {
-  width: 90%;
+main {
+  color: #545149;
   background-color: #f4f1ec;
+
+  width: 90%;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
 }
 
 /*

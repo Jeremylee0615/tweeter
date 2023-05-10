@@ -1,4 +1,4 @@
-nav {
+.nav-Bar {
   height: 120px;
   width: 100%;
   padding: 1.5em;
@@ -14,7 +14,15 @@ nav {
   top:0;
 }
 
-#writeNew {
+.heading {
+    color: #FFFFFF;
+    font-family: "Bungee";
+    font-size: larger;
+    margin: 1.5em;
+
+}
+
+.writeNew {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,7 +34,3 @@ nav {
 #arrowDoubleDown {
     color: tomato;
 }
-
-.heading {
-    font-family: "Bungee", cursive;
-  }

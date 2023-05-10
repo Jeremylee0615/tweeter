@@ -1,32 +1,50 @@
 .new-tweet {
     width: 100%;
+    margin: 0.5em;
+
     display: flex;
     flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    font-weight: 450;
 }
 
-form {
-    width: 85%;
+.submitTweets {
+    margin-top: 5px;
+    
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+
+    font-family: "Bungee";    
+    font-size: medium;
+
 }
 
 button {
+    font-family: "Bungee";    
+    font-size: large;
+    
     border: none;
     color: white;
     background-color: #4056A1;
 }
 
 textarea {
-    margin-top: 5px;
-    height: 50px;
-
     width: 100%;
+    height: 35px;
+    margin-top: 5px;
+    
+    overflow: hidden;
+    resize: none;
+    display: block;
+    
+    outline: none;
     border: none;
-    border-bottom: 3px solid black;
+    border-bottom: solid black;
     background-color: #f4f1ec;
 
-    resize: none;
-
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 20px;
+    font-weight: 450;
 }
