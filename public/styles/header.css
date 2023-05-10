@@ -1,23 +1,23 @@
 .profile {
-    height: 400px;
-    width: 100%;
-    
-    background-color: #eca829;
-    background-image: url("../images/fablic-light.png");
-    margin-top: 120px;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
+  height: 400px;
+  width: 100%;
+  
+  background-color: #eca829;
+  background-image: url("../images/fablic-light.png");
+  margin-top: 120px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
 }
 
 .profile .name h2 {
-    color: white;
-    font-weight: 600;
+  color: white;
+  font-weight: 600;
 }
 
 .profile .name h2 span {
-    font-weight: 600;
+  font-weight: 600;
 }
