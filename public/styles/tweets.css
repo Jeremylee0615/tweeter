@@ -11,7 +11,7 @@ article:hover {
 }
 
 
-.tweet-head {
+.tweet-header {
   margin: 0.5em;
 
   display: flex;
@@ -20,7 +20,7 @@ article:hover {
   font-size: 20px;
 }
 
-.tweet-foot {
+.tweet-footer {
   padding: 20px;
   margin-top: 0.25em;
   margin-bottom: 0.25em;

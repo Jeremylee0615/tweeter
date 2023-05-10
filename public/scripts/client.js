@@ -1,7 +1,14 @@
 $(document).ready(function() {
 	
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
   const renderTweets = function(tweets) {
-		for (obj of tweets) {
+		$(".tweet-container").empty();
+    for (obj of tweets) {
 			const $tweetElement = createTweetElement(obj);
 			$(".tweet-container").prepend($tweetElement);
 		}
@@ -9,22 +16,22 @@ $(document).ready(function() {
 
 	const createTweetElement = function(tweet) {
 		let $tweet = `
-  <article class = "tweet">
-  <header>
+  <article>
+  <header class= "tweet-header">
     <div>
-      <img src="${tweet.user.avatars}">
-       &nbsp&nbsp${tweet.user.name}
+      <img src="${escape(tweet.user.avatars)}">
+      <span>${escape(tweet.user.name)}</span>
     </div>
     <div>
-      <a>${tweet.user.handle}</a>
+      <span>${escape(tweet.user.handle)}</span>
     </div>
   </header>
   <body>
-    <p class="user-post">${tweet.content.text}</p>
+      <span>${escape(tweet.content.text)}</span>
   </body>
-  <footer>
-    <div>${timeago.format(tweet.created_at)}</div>
-    <div>
+  <footer class= "tweet-footer">
+    <span>${timeago.format(tweet.created_at)}</span>
+    <div class="actions">
       <i class="fa-solid fa-flag"></i>
       <i class="fa-solid fa-retweet"></i>
       <i class="fa-solid fa-heart"></i>
