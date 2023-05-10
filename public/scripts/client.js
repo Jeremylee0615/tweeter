@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	const data = [
+	/*const data = [
 		{
 			"user": {
 				"name": "Newton",
@@ -22,7 +22,7 @@ $(document).ready(function() {
 			},
 			"created_at": 1461113959088
 		}
-	];
+	];*/
 
 	const renderTweets = function(tweets) {
 		// loops through tweets
@@ -52,7 +52,7 @@ $(document).ready(function() {
     <p class="user-post">${tweet.content.text}</p>
   </body>
   <footer>
-    <div>${tweet.created_at}</div>
+    <div>${timeago.format(tweet.created_at)}</div>
     <div>
       <i class="fa-solid fa-flag"></i>
       <i class="fa-solid fa-retweet"></i>
@@ -64,8 +64,6 @@ $(document).ready(function() {
 		return $tweet;
 	};
 
-	renderTweets(data);
-
 	$("#tweetForm").submit(function(event) {
 		event.preventDefault();
 		const tweetContent = $("#tweet-text").val();
@@ -73,11 +71,19 @@ $(document).ready(function() {
 		//console.log("logout", tweetContent)
 		$.ajax({
 			url: "/tweets",
-			context: document.body,
 			data: serialized,
 			type: "POST"
 		}).then(function(response) {
-			console.log(tweetContent)
+		//console.log(tweetContent)
 		});
 	});
+  
+  const loadTweets = () => {
+    $.get("http://localhost:8080/tweets", (data) => {
+      renderTweets(data)
+    })
+  }
+  
+  loadTweets();
+  //renderTweets(data);
 });
