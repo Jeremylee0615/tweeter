@@ -6,13 +6,13 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Final Project
 *Desktop Version.*
-![]([public\images\tweeter-desktop-ver..PNG](https://github.com/Jeremylee0615/tweeter/blob/master/public/images/tweeter-desktop-ver..PNG))
+![](./public/images/tweeter-desktop-ver..PNG)
 
 *Error when typed nothing*
-![]([public\images\tweeter-tablet-ver..PNG](https://github.com/Jeremylee0615/tweeter/blob/master/public/images/tweeter-type-error.PNG))
+![](./public/images/tweeter-type-error.PNG)
 
 *Tablet Ver.*
-![]([public\images\tweeter-type-error.PNG](https://github.com/Jeremylee0615/tweeter/blob/master/public/images/tweeter-tablet-ver..PNG))
+![](./public/images/tweeter-tablet-ver..PNG)
 
 ## Getting Started
 
