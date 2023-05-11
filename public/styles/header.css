@@ -1,22 +1,39 @@
+/*Tablet Ver.*/
 .profile {
   height: 400px;
   width: 100%;
   
-  background-color: #eca829;
+  background-color: #29ec6a;
   background-image: url("../images/fablic-light.png");
-  margin-top: 120px;
   
   display: flex;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  
+}
+
+.name span{
+  font-weight: 600;
 }
 
 .profile .name h2 {
   color: white;
-  font-weight: 600;
+  font-weight: 300;
 }
 
-.profile .name h2 span {
-  font-weight: 600;
+/*Desktop Ver.*/
+@media only screen and (min-width: 1024px) {
+  .profile { 
+    width: 60%;
+    margin-top: 5%;
+    margin-left: 4.5em;
+  }
+
+  .profile img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
 }

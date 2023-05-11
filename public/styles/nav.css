@@ -3,8 +3,8 @@
   width: 100%;
   padding: 1.5em;
   
-  background-color: #4056A1;
   color: #FFFFFF;
+  background-color: #4056A1;
   
   display: flex;
   justify-content: space-between;
@@ -42,6 +42,6 @@
 #arrow {
   margin-top: 0.5em; 
   
-  color: tomato;
+  color: rgb(228, 74, 54);
   font-size: 1.5em;
 }
