@@ -23,6 +23,13 @@ body {
   font-size: 24px;
 }
 
+body main {
+  width: 90%;
+  background-color: #f4f1ec;
+  display: flex;
+  flex-direction: column;
+}
+
 .container {
   width: 90%;
   margin-right: auto;
@@ -35,9 +42,10 @@ body {
 }
 
 article {
-  border: solid;
   margin-bottom: 0.5em;
   
+  border: solid;
+
   align-items: column;
 }
 
@@ -48,11 +56,13 @@ article {
     display: flex;
     align-content: space-around;
   }
-
+  
   body .container {
     width: 50%;
     margin-right: 2.0em;
 
     object-fit: fill;
   }
+
+
 }

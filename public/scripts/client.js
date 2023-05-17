@@ -43,7 +43,7 @@ $(document).ready(function() {
 	};
 
 	const loadTweets = () => {
-		$.get("http://localhost:8080/tweets", (data) => {
+		$.get("/tweets", (data) => {
 			renderTweets(data);
 		});
 	};
@@ -57,7 +57,7 @@ $(document).ready(function() {
 			$(".error-message").text("Sorry, You have exceeded the words limit that you can tweet.");
 		} else {
 			const serialized = $(this).serialize();
-		  $.post("http://localhost:8080/tweets", serialized, (reponse) => {
+		  $.post("/tweets", serialized, (reponse) => {
 				$("textarea").val("");
 				$(".counter").text(140);
 				loadTweets();

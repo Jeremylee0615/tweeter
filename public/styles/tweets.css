@@ -3,7 +3,9 @@ article:hover {
   box-shadow: 5px 10px;
   color: 545149
 }
-
+.actions i:hover  {
+  color: #ee8697;
+}
 .tweet-container {
   width: 90%;
   margin-right: auto;
