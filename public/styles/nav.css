@@ -1,5 +1,5 @@
 /*Tablet Ver.*/
-.nav-Bar {
+.nav-Spec {
   height: 120px;
   width: 100%;
   padding: 1.5em;
@@ -23,13 +23,12 @@
   font-size: 35px;
 }
 
-.nav-Bar footer .writeNew {
-  margin: 1.0em;
+.nav-Spec footer .writeNew {
+  margin: 1.5em;
   
   border: none;
   outline: none;
   color: #ffffff;
-  background-color: #4056A1;
   font-family: "Source Sans Pro";
   font-size: 25px;
   font-weight: 300;
@@ -40,9 +39,27 @@
 
 }
 
-#arrow {
-  margin-top: 0.5em; 
-  
+/*Arrow Details*/
+.nav-Spec footer .fa-solid {
   color: rgb(228, 74, 54);
-  font-size: 1.5em;
+  font-size: 1.0em;
+}
+
+@media only screen and (min-width:1024px) {
+  .nav-Spec {
+    height: 150px;
+  }
+
+  .heading {
+    font-size: 45px;
+  }
+  .nav-Spec footer .writeNew {
+    font-size: 35px;
+  }
+
+  .nav-Spec footer .fa-solid {
+    color: rgb(228, 74, 54);
+    font-size: 1.0em;
+  }
+
 }

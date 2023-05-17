@@ -50,7 +50,9 @@ article {
   }
 
   body .container {
-    width: 80%;
-    
+    width: 50%;
+    margin-right: 2.0em;
+
+    object-fit: fill;
   }
 }
