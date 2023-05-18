@@ -27,10 +27,23 @@
   .profile { 
     width: 50%;
     height: 550px;  
-    margin-top: 12 em;
-    margin-left: 4.0 em;
+    margin-top: 2.0em;
+    margin-left: 4.0em;
   }
   .profile h2 {
     margin-bottom: 45px;
   }
+
+  .nav-Spec {
+    background-color: #4056A1;
+  }
+  
+}
+
+@media only screen and (max-width: 1024px) {
+  .nav-Spec {
+    background-color: #29ec6a;
+    background-image: url("../images/fablic-light.png");
+  }
+  
 }

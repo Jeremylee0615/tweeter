@@ -36,9 +36,11 @@ button {
   background-color: #4056A1;
 }
 
+.writeNew {
+  background-color: transparent;
+}
 textarea {
   width: 100%;
-  height: 30px;
   margin-top: 5px;
     
   outline: none;

@@ -36,4 +36,7 @@ article:hover {
   justify-content: space-between;
   font-weight: 600;
 }
-  
+
+.container span {
+  word-wrap: break-word;
+}
