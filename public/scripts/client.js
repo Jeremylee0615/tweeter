@@ -56,6 +56,7 @@ $(document).ready(function() {
 		} else if (tweetContent.length > 140) {
 			$(".error-message").text("Sorry, You have exceeded the words limit that you can tweet.");
 		} else {
+			$(".error-message").text("");
 			const serialized = $(this).serialize();
 		  $.post("/tweets", serialized, (reponse) => {
 				$("textarea").val("");
